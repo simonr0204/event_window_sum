@@ -4,7 +4,8 @@ import time
 
 def main(contract_address, event_sig, event_parser, sum_parser, window):
 
-    print(f"Listening for {event_sig} events on {contract_address[:10]}..., window = {window}")
+    print(f"Sum of {event_sig} events on {contract_address[:10]}..., window = {window}")
+    print("Listening...")
 
     # Instantiate a web3 connection
     w3 = setup_web3_connection()
