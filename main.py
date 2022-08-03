@@ -48,6 +48,7 @@ if __name__ == "__main__":
 
     # Configure script with the following:
 
+    # Use Dai transfer events as example
     CONTRACT_ADDRESS = "0x6B175474E89094C44Da98b954EedeAC495271d0F"
     EVENT_SIGNATURE = "Transfer(address,address,uint256)"
 
