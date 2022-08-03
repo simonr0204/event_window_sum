@@ -48,6 +48,10 @@ if __name__ == "__main__":
 
     # Configure script with the following:
 
+    CONTRACT_ADDRESS = "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+    EVENT_SIGNATURE = "Transfer(address,address,uint256)"
+
+
     # A parser for extracting values from the specified event
     # For this example, DAI transfer is `Transfer(address indexed src, address indexed dst, uint wad)`
     # So `amount` is in the data
@@ -70,8 +74,8 @@ if __name__ == "__main__":
     aggregator = sum
 
     main(
-        contract_address = "0x6B175474E89094C44Da98b954EedeAC495271d0F",
-        event_sig = "Transfer(address,address,uint256)",
+        contract_address = CONTRACT_ADDRESS,
+        event_sig = EVENT_SIGNATURE,
         event_parser = parse_dai_transfer,
         aggregate_parser = parse_dai_aggregate,
         aggregator = aggregator,
